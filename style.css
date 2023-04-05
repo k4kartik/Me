@@ -803,3 +803,72 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+.game.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #f52072;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    cursor: pointer;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .game.button:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 140px;
+    height: 140px;
+    border-radius: 120%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .game.button span {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .game.button:hover {
+    background-color: crimson;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .game.button:hover:before {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes float {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
