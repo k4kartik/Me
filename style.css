@@ -811,7 +811,7 @@ footer span a:hover{
     margin: 20px auto;
     padding: 20px;
     border-radius: 50%;
-    background-color: #f52072;
+    background-color: rgb(220, 20, 60);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 120px;
     height: 120px;
@@ -821,7 +821,7 @@ footer span a:hover{
     text-align: center;
     cursor: pointer;
     animation-name: float;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
