@@ -111,23 +111,40 @@ section .title::after{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.navbar .menu li a {
     display: block;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
+
+    /* Add the following styles for the line animation */
+    position: relative;
 }
-.navbar .menu li a:hover{
+
+.navbar .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: crimson;
+    transition: width 0.4s ease-in-out;
+}
+
+.navbar .menu li a:hover {
     color: crimson;
     text-decoration-line: initial;
     text-shadow: #f1f1f1;
-}
-.navbar.sticky .menu li a:hover{
-    color: #fff;
+
+    /* Add the following styles for the line animation on hover */
 }
 
+.navbar .menu li a:hover::after {
+    width: 100%;
+}
 /* menu btn styling */
 .menu-btn{
     color: #fff;
