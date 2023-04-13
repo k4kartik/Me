@@ -14,7 +14,17 @@
         <span class="score">Score: 0</span>
         <span class="high-score">High Score: 0</span>
       </div>
-      <div class="play-board"></div>
+      <div class="game-details right">
+        <span class="welcome-text">Welcome to</span>
+        <span class="game-title">Snake Game</span>
+      </div>
+      <div class="play-board">
+        <!-- Add the .body class to the appropriate elements that represent the body segments of the snake -->
+        <div class="food"></div>
+        <div class="head"></div>
+        <div class="body"></div> <!-- Add the .body class here -->
+        <!-- Add more .body elements for additional body segments of the snake if needed -->
+      </div>
       <div class="controls">
         <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
         <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
@@ -22,6 +32,5 @@
         <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
       </div>
     </div>
-
   </body>
 </html>
