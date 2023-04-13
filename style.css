@@ -130,12 +130,11 @@ section .title::after{
     left: 0;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: crimson;
     transition: width 0.4s ease-in-out;
 }
 
 .navbar .menu li a:hover {
-    color: crimson;
     text-decoration-line: initial;
     text-shadow: #f1f1f1;
 
